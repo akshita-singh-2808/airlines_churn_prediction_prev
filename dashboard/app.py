@@ -17,7 +17,7 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     base_dir = Path(__file__).resolve().parent
-    data_path = base_dir / "data" / "Final_Segments.csv"
+    data_path = base_dir /"Segmented_Customers.csv"
     df = pd.read_csv(data_path)
     return df
 
